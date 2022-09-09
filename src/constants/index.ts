@@ -4,6 +4,12 @@ export const formMessages = {
     description: 'Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!'
 }
 
+export const thankYouMessages = {
+    rate: ' You selected {value} out of 5',
+    title: 'Thank you!',
+    description: "We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch."
+}
+
 export const starsMessages = [
     {
         rate: 1,

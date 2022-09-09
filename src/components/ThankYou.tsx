@@ -1,7 +1,11 @@
-import React from 'react'
 import IconThankYou from './IconThankYou'
+import { MsgI } from '../types'
+import { thankYouMessages } from '../constants'
 
-const ThankYou = ({ msg }: any) => {
+const ThankYou = ({ msg }: MsgI) => {
+
+    const rateValue = msg?.rate && thankYouMessages.rate.replace('{value}', `${msg.rate}`)
+
     return (
         <div className="thankyou">
             <div className="thankyou__container">
@@ -9,12 +13,14 @@ const ThankYou = ({ msg }: any) => {
                     <IconThankYou />
                 </div>
                 <span className="thankyou__selectedreview">
-                    You selected {msg?.rate} out of 5
+                    {rateValue}
                 </span>
                 <h1 className="thankyou__title">
-                    Thank you!
+                    {thankYouMessages.title}
                 </h1>
-                <p className='thankyou__description'>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch.</p>
+                <p className='thankyou__description'>
+                    {thankYouMessages.description}
+                </p>
             </div>
         </div>
     )
