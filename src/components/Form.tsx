@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 import IconStar from './IconStar'
 import { FormI, StarI } from '../types';

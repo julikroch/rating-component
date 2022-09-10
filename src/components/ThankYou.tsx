@@ -1,3 +1,4 @@
+import React from 'react';
 import IconThankYou from './IconThankYou'
 import { MsgI } from '../types'
 import { thankYouMessages } from '../constants'
